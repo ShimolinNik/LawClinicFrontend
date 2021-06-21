@@ -1,0 +1,29 @@
+<!--<p>inputs works!</p><ng-container >
+    <ul>
+
+        <li *ngFor="let element of information">{{element.Theme_Legal}} - {{element.Nom_Scenario}}</li>
+
+    </ul>
+
+</ng-container>
+
+list of themes clickables
+<ul>
+
+    <li *ngFor="let theme of themes" (click)=getTheme(theme)>{{theme}}</li>
+
+</ul>
+
+-->
+
+<input [(ngModel)]="input1">
+<input [(ngModel)]="input2">
+
+<button  [disabled]= false type="button" name = "button" *ngIf=input2&&input1 (click)=getThemeMot() >Test</button>
+
+<button  [disabled]= false type="button" name = "button" *ngIf=input2&&!input1 (click)=getMot()>Test</button>
+
+<button  [disabled]= false type="button" name = "button" *ngIf=input1&&!input2 (click)=getTheme(input2)>Test</button>
+
+<button  id ="element.id_Scenario" *ngFor="let element of information" (click)=getValue(element.id_Scenario) (click)=getDonnees()>{{element.Nom_Scenario}}</button>
+

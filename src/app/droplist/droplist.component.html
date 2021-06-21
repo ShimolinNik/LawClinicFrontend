@@ -1,0 +1,48 @@
+<mat-form-field appearance="fill">
+  <mat-label>Themes</mat-label>
+  <mat-select [(ngModel)]="selectedTheme" (selectionChange)="onSelect()">
+    <mat-option *ngFor="let theme of themes" [value]="theme">
+      {{theme}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+<p>You selected: {{selectedTheme}}</p>
+
+<mat-form-field appearance="fill">
+  <mat-label>Mots-clés</mat-label>
+  <mat-select [(ngModel)]="selectedMot" (selectionChange)="onSelect()">
+    <mat-option *ngFor="let mot of mots" [value]="mot">
+      {{mot}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+<p>Your selected mot: {{selectedMot}}</p>
+<router-outlet></router-outlet>
+<!--<button  id ="element.id_Scenario" *ngFor="let element of information" (click)=getValue(element.id_Scenario) (click)=getDonnees() (click)=onSelect()>{{element.Nom_Scenario}}</button>
+
+<p>{{information.Nom_Scenario}}</p>
+<p>{{information.Information_Legal}</p>
+<app-description></app-description>
+<h4>Basic mat-select</h4>
+<mat-form-field appearance="fill">
+  <mat-label>Favorite food</mat-label>
+  <mat-select >
+    <mat-option *ngFor="let food of foods" [value]="food.value">
+      {{food.viewValue}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+
+<h4>Basic native select</h4>
+<mat-form-field appearance="fill">
+  <mat-label>Cars</mat-label>
+  <select matNativeControl required>
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </select>
+</mat-form-field>-->
